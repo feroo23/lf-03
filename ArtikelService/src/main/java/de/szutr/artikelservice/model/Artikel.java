@@ -11,6 +11,8 @@ public class Artikel {
 
     }
 
+
+
     public Artikel(long id, String bezeichnung, String beschreibung, double preisEK, double preisVK) {
         this.id = id;
         this.bezeichnung = bezeichnung;

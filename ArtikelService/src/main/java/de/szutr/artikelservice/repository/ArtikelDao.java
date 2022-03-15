@@ -9,36 +9,40 @@ public class ArtikelDao {
 
    private Map<Long, Artikel> artikelListe;
 
-   public void artikelDao(){
+   public void artikelDao() {
 
    }
 
-   private void initHashMap(){
+   private void initHashMap() {
 
    }
 
-   public Artikel create(Artikel artikel){
-      if (artikelListe.containsKey(artikel.getId())){
+   public Artikel create(Artikel artikel) {
+      if (artikelListe.containsKey(artikel.getId())) {
          return null;
-      }
-      else {
+      } else {
          artikelListe.put(artikel.getId(), artikel);
          return artikelListe.get(artikel.getId());
       }
    }
 
-   public Artikel read(long id){
+   public Artikel read(long id) {
 
    }
-   public List<Artikel> read(){
+
+   public List<Artikel> read() {
 
    }
-         
+
    public update(Artikel artikel) {
+      if (artikelListe.containsKey(artikel.getId())) {
+         return null;
+      } else {
 
+      }
    }
 
-   public void delete(long id){
+   public void delete(long id) {
 
    }
 
