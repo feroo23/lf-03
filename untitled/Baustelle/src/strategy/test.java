@@ -15,3 +15,4 @@ public class test {
         IchBinEinzigartig.getInstance().getSpeicherort();
     }
 }
+
