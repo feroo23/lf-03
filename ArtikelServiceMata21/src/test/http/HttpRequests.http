@@ -1,0 +1,35 @@
+### Alle Artikel Lesen
+GET http://localhost:8080/myappdata/articles
+Accept: application/json
+
+### Neuen Artikel mit ID = 4 Hinzufügen
+POST http://localhost:8080/myappdata/articles
+Content-Type: application/json
+
+{
+  "id": 4,
+  "bezeichnung": "Alo",
+  "beschreibung": "allo",
+  "preisEK": 200,
+  "preisVK": 200
+}
+
+### Artikel mit ID = 4 ändern
+PUT http://localhost:8080/myappdata/articles
+Content-Type: application/json
+
+{
+  "id": 4,
+  "bezeichnung":"Alllllllllllllllllllllo",
+  "beschreibung":"alllllllllllllo",
+  "preisEK":2000000,
+  "preisVL": 200
+}
+
+### Artikel mit ID = 4 Löschen
+DELETE http://localhost:8080/myappdata/articles/4
+Accept:  application/json
+
+### Alle Artikel Lesen
+GET http://localhost:8080/myappdata/articles
+Accept: application/json

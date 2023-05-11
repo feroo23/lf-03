@@ -1,4 +1,4 @@
-package de.szutr.artikelservice.repository ;
+package de.szutr.artikelservice.repository;
 
 import de.szutr.artikelservice.model.Artikel;
 
@@ -7,43 +7,46 @@ import java.util.Map;
 
 public class ArtikelDao {
 
-   private Map<Long, Artikel> artikelListe;
+    private Map<Long, Artikel> artikelListe;
 
-   public void artikelDao() {
+    public void artikelDao() {
 
-   }
+    }
 
-   private void initHashMap() {
+    private void initHashMap() {
 
-   }
+    }
 
-   public Artikel create(Artikel artikel) {
-      if (artikelListe.containsKey(artikel.getId())) {
-         return null;
-      } else {
-         artikelListe.put(artikel.getId(), artikel);
-         return artikelListe.get(artikel.getId());
-      }
-   }
+    public Artikel create(Artikel artikel) {
+        if (artikelListe.containsKey(artikel.getId())) {
+            return null;
+        } else {
+            artikelListe.put(artikel.getId(), artikel);
+            return artikelListe.get(artikel.getId());
+        }
+    }
 
-   public Artikel read(long id) {
+    public Artikel read(long id) {
 
-   }
+    }
 
-   public List<Artikel> read() {
+    public List<Artikel> read() {
+        if (artikelListe.get(artikelDao())) {
+            return null;
+        } else (artikelListe.get(artikelListe))
+    }
 
-   }
+    public Artikel update(Artikel artikel) {
+        if (artikelListe.containsKey(artikel.getId())) {
+            return null;
+        } else {
+            artikelListe.put(artikel.getId(), artikel);
+            return artikelListe.get(artikel.getId());
+        }
+    }
 
-   public update(Artikel artikel) {
-      if (artikelListe.containsKey(artikel.getId())) {
-         return null;
-      } else {
-
-      }
-   }
-
-   public void delete(long id) {
-
-   }
+    public void delete(long id) {
+        artikelListe.
+    }
 
 }

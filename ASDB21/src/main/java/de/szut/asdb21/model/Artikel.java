@@ -1,4 +1,4 @@
-package de.szutr.artikelservice.model;
+package de.szut.asdb21.model;
 
 public class Artikel {
     private long id;
@@ -7,12 +7,12 @@ public class Artikel {
     private double preisEK;
     private double preisVK;
 
-    public void Artikel() {
 
+
+    public Artikel() {
     }
 
-
-    public Artikel(long id, String bezeichnung, String beschreibung, double preisEK, double preisVK) {
+    public Artikel(long id, String bezeichnung, String beschreibung, double preisEK, double preisVL) {
         this.id = id;
         this.bezeichnung = bezeichnung;
         this.beschreibung = beschreibung;
@@ -29,7 +29,10 @@ public class Artikel {
     }
 
     public String getBezeichnung() {
+
         return bezeichnung;
+
+
     }
 
     public void setBezeichnung(String bezeichnung) {
